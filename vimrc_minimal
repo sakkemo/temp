@@ -1,0 +1,52 @@
+set nocompatible
+filetype plugin indent on
+" Enable syntax highlighting
+syntax enable
+
+set hidden
+set wildmenu
+set showcmd
+set hlsearch
+set nomodeline
+
+set ignorecase
+set smartcase
+set backspace=indent,eol,start
+
+set autoindent
+set nostartofline
+
+set ruler
+set laststatus=2
+
+set confirm
+
+set visualbell
+set t_vb=
+
+" Enable use of the mouse for all modes
+set mouse=a
+
+" Quickly time out on keycodes, but never time out on mappings
+set notimeout ttimeout ttimeoutlen=200
+
+" Use <F11> to toggle between 'paste' and 'nopaste'
+set pastetoggle=<F11>
+
+
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+
+
+nnoremap <C-L> :nohl<CR><C-L>
+nnoremap <Leader>cd :let @+=expand("%:p:h")<CR>
+
+
+" Set the command window height to 2 lines, to avoid many cases of having to
+" "press <Enter> to continue"
+set cmdheight=2
+
+set number
+
+set foldmethod=marker
